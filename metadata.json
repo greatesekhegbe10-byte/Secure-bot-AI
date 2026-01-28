@@ -1,0 +1,5 @@
+{
+  "name": "SecurBot AI - Cyber Defense Platform",
+  "description": "A comprehensive AI-powered cybersecurity dashboard featuring vulnerability scanning, phishing detection, and API security monitoring using Gemini 2.5.",
+  "requestFramePermissions": []
+}
