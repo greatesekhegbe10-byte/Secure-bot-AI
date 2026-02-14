@@ -4,7 +4,7 @@ import { ScanResult, SecurityRisk } from "../types";
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // Using a flash model for speed in analysis
-const MODEL_NAME = 'gemini-2.5-flash-latest';
+const MODEL_NAME = 'gemini-3-flash-preview';
 
 export const analyzeVulnerabilities = async (target: string, type: 'URL' | 'CODE' | 'API'): Promise<ScanResult> => {
   const prompt = `

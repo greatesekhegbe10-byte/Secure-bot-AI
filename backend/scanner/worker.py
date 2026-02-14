@@ -102,10 +102,12 @@ def run_scan(job):
     output_file = f"/tmp/{scan_id}.json"
     
     # Nuclei command
+    # Changed flags: -json -o file (Standard for JSONL output in file)
     cmd = [
         "nuclei",
         "-target", target,
-        "-json-export", output_file,
+        "-json",
+        "-o", output_file,
         "-silent",
         "-t", "http/misconfiguration", # Limit templates for demo speed
         "-t", "http/exposures"
